@@ -13,7 +13,7 @@ then
 read -p "Which server do you want to connect to: " server_name
 read -p "which port do you want to connect as SSH connection:" port
 read -p "Which username do you want to use: " user_name
-sudo ssh ${user_name}@$server_name $port
+ssh ${user_name}@$server_name $port
 exit
 elif [ $count -eq 2 ]
 then
@@ -21,7 +21,7 @@ sudo apt-get install ssh -y
 read -p "Which server do you want to connect to: " server_name
 read -p "which port do you want to connect as SSH connection:" port
 read -p "Which username do you want to use: " user_name
-sudo ssh ${user_name}@$server_name $port
+ssh ${user_name}@$server_name $port
 exit
 else 
 echo "you are killer go back dude :) :) :)" 
